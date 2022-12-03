@@ -4,9 +4,9 @@ import items from "./items";
 import { Whole, LnbWrapper, HeaderSection } from "./designSource";
 import CONFIG from "../../config/config";
 
-const Header_A = () => {
+const Header_C = () => {
   return (
-    <Whole bg="orange">
+    <Whole bg="yellow">
       <HeaderSection>
         {items.map((item) => {
           return (
@@ -22,12 +22,7 @@ const Header_A = () => {
           return (
             <div>
               {item.menus.map((menu) => {
-                return (
-                  <div>
-                    {CONFIG.LAN_TYPE === "KO" && menu.name_ko}
-                    {CONFIG.LAN_TYPE === "EN" && menu.name_en}
-                  </div>
-                );
+                return <div>{menu.name_ko}</div>;
               })}
             </div>
           );
@@ -37,4 +32,4 @@ const Header_A = () => {
   );
 };
 
-export default Header_A;
+export default Header_C;

@@ -11,6 +11,10 @@ const Appear = keyframes`
 export const LnbWrapper = styled.section`
   display: none;
   width: 100%;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 `;
 
 export const Whole = styled.div`
@@ -32,4 +36,14 @@ export const Whole = styled.div`
       animation: ${Appear} 1s forwards;
     }
   }
+`;
+
+export const HeaderSection = styled.section`
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 `;

@@ -76,8 +76,6 @@ const QuickSection = styled.section`
 const App = () => {
   return (
     <Wrapper>
-      <Header_A />
-
       <Fade>
         <ImageSection>
           <Image
